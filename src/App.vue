@@ -10,7 +10,7 @@ store.commit('setPostData', store.dispatch('getPosts').then((res => res)))
 let posts = computed(() => store.getters.posts)
 
 
-console.log(posts,'posts')
+console.log( posts,'posts')
 
 </script>
 
@@ -26,3 +26,4 @@ console.log(posts,'posts')
 <style scoped>
 
 </style>
+
