@@ -16,7 +16,12 @@ console.log( posts,'posts')
 
 <template>
    <NavBar />
-   {{ posts}}
+   <ul>
+          <li v-for="post in posts" :key="post.id">
+              {{post.title}}
+          </li>
+      </ul>
+
    <main>
     <RouterView />
    </main>
